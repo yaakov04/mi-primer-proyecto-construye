@@ -26,7 +26,7 @@ if (document.getElementById('galeria-container')) {
 //inserta los elementos en el array
 function listaGaleria(){
     let x = 0;
-///corregir codigo: retirar if
+
     while (x < totalImgGaleria) {
         lista.push(document.querySelectorAll('#galeria-container div')[x].firstChild.src);
        
@@ -142,8 +142,7 @@ function clickGaleria(e){
     e.preventDefault();
     
     let img = e.target.src
-    //console.log(e.target.parentElement.parentElement.children[1].innerHTML);
-    //console.log(img)
+    
     
     abrirModalGaleria();
     //seleccionando la imagen del modal
@@ -187,7 +186,7 @@ function cambiarImgModal(tipo){
     if (tipo === 'siguiente') {
         let x = imgact;
         siguiente(x, lista);
-        //console.log(lista[imgact]);
+        
     }
     if (tipo === 'anterior') {
         let x = imgact;
@@ -221,25 +220,39 @@ function anterior(x, lista) {
     }
 }
 
-/*
-function prueba(){
-    let i = 0;
-    let imgact = 0;
-    let imagenModal = document.getElementById('img-modal');
-    //console.log(lista.length);
-    while (i < lista.length) {
-        //console.log(lista[i]);
-        if (lista[i]=== imagenModal.src) {
-            console.log(lista[i]);
-            console.log(i);
-            imgact = i;
-        }
-        i++;
+//Menu Movil
+let hamburger = document.querySelector('#hamburger');
+let menu = document.querySelector('#menu-movil');
+
+
+hamburger.addEventListener('click', menuMovil);
+
+
+function menuMovil() {
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
     }
-    sig();
-            function sig(){//ejemplo de func sig
-                imagenModal.src = lista[imgact+1];
-                console.log(imagenModal.src)
-            }
 }
-*/
+
+//Menu fijo
+if (document.getElementById('contacto-barra')) {
+    let menuFijo = document.getElementById('contacto-barra');
+    let fijo = menuFijo.offsetTop;
+
+    window.onscroll = function() {
+
+        menuFixed();
+    }
+
+    function menuFixed() {
+        if (window.pageYOffset >= fijo) {
+
+            menuFijo.classList.add('fixed');
+
+        } else {
+            menuFijo.classList.remove('fixed');
+        }
+    }
+}

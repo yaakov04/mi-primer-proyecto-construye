@@ -19,7 +19,7 @@
                 while ($proyecto = $resultado->fetch_assoc()) {//while ?>
                 
                     <div class="proyecto">
-                        <a id="proyecto" href="img_proyectos/<?php echo $proyecto['img_proyecto']; ?>"><img src="img_proyectos/<?php echo $proyecto['img_proyecto']; ?>" alt="Proyecto casa de campo"></a>
+                        <a id="proyecto" href="img_proyectos/<?php echo $proyecto['img_proyecto']; ?>"><img src="img_proyectos/<?php echo $proyecto['img_proyecto']; ?>" alt="<?php echo $proyecto['titulo_proyecto']; ?>"></a>
                         <div class="proyecto-txt">
                             <p><?php echo $proyecto['titulo_proyecto']; ?></p>
                         </div>
