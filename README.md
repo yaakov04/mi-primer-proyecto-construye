@@ -3,6 +3,7 @@ Practica de sitio web con php.
 
 El proyecto es una sitio web de una contructora.
 
+![test](https://github.com/favicon.ico | width=48)
 
 Las vistas estan contruidas con HTML, CSS y Javascript; y se muestran con PHP.
 
