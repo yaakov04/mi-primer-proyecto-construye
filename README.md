@@ -1,6 +1,9 @@
 # mi-primer-proyecto-construye
 Practica de sitio web con php.
+
 El proyecto es una sitio web de una contructora.
+
+
 Las vistas estan contruidas con HTML, CSS y Javascript; y se muestran con PHP.
 
 El sitio web implementa:
