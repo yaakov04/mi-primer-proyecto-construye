@@ -22,5 +22,17 @@ Imagenes de muestra
   <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image1947.png" width="400">
   <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image2509.png" width="400">
   <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image3071.png" width="400">
-  <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image4195.png" width="400">
+  <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image4195.png" >
+<div>
+  
+El sitio también es responsive
+<div style="
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  ">
+  <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image6454.png" width="400">
+  <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image7016.png" width="400">
+  <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image8140.png" width="400">
+  <img src="https://raw.githubusercontent.com/yaakov04/mi-primer-proyecto-construye/master/imagenes_muestra/image5892.png" width="400">
 <div>
